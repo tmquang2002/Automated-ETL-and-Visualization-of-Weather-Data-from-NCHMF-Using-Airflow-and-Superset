@@ -1,6 +1,6 @@
 # Automated ETL and Visualization of Weather Data from NCHMF Using Airflow and Superset
 
-<img src="https://nchmf.gov.vn/KttvsiteE//images/banner-hd-en.jpg" alt="NCHMF" width="700"/>
+<img src="https://nchmf.gov.vn/KttvsiteE//images/banner-hd-en.jpg" alt="NCHMF" width="900"/>
 
 ## Table of Contents
 
@@ -30,5 +30,45 @@ This project aims to automate the process of extracting, transforming, and loadi
 - **MongoDB**: Optional, used for additional data storage.
 - **Apache Superset**: For creating and managing data visualizations.
 - **Docker Compose**: To orchestrate the deployment of the above technologies.
+
+## Setup Instructions
+
+1. **Clone the Repository**
+
+   ```bash
+   git clone https://github.com/yourusername/Automated-ETL-and-Visualization-of-Premier-League-Match-Results-Using-Airflow-and-Apache-Superset.git
+   cd Automated-ETL-and-Visualization-of-Premier-League-Match-Results-Using-Airflow-and-Apache-Superset
+
+2. **Configuration**
+
+- **Airflow Configuration**
+
+  - Edit the file `airflow/dags/ETL.py` to configure your ETL tasks.
+
+- **Superset Configuration**
+
+  - Configure the connection to your PostgreSQL database in the Superset web interface after deployment.
+
+- **Docker Compose Configuration**
+
+  - Modify `docker-compose.yml` if necessary to suit your environment.
+
+3.  **Start the Environment**
+
+```bash
+docker compose up -d
+cd superset
+docker compose -f docker-compose-non-dev.yml up #to run Apache Superset
+```
+## Data Pipeline
+![image](https://i.ibb.co/7jd8Ykg/ETL-process.png)
+
+- **Scrapy**: Collects weather data from the NCHMF website using BeautifulSoup and stores it in a MongoDB database as a data lake.
+- **Extraction**: Airflow DAG fetches weather data from the MongoDB database.
+- **Transformation**: Data is cleaned and transformed into a format suitable for analysis.
+- **Loading**: Transformed data is loaded into a PostgreSQL database as Data WareHouse for further analysis.
+- **Scheduling**: Airflow schedules regular updates of the data pipeline.
+- **Email**: Sends an email notification to users with updated weather information specific to their local area.
+- **Analysis**: Analyzes the weather data, providing detailed insights into daily temperature, humidity, wind direction, and other weather indicators.
 
    

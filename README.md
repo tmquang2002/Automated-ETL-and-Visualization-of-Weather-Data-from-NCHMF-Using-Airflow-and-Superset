@@ -85,7 +85,7 @@ docker compose -f docker-compose-non-dev.yml up #to run Apache Superset
 
 - After ETL is done, receive email about the latest weather information in your subscribed area.
   
-  ![image]()
+  ![image](https://i.ibb.co/KFKCJ1H/sendmail.png)
 
 ### Access Superset
 

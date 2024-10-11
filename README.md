@@ -36,8 +36,8 @@ This project aims to automate the process of extracting, transforming, and loadi
 1. **Clone the Repository**
 
    ```bash
-   git clone https://github.com/yourusername/Automated-ETL-and-Visualization-of-Premier-League-Match-Results-Using-Airflow-and-Apache-Superset.git
-   cd Automated-ETL-and-Visualization-of-Premier-League-Match-Results-Using-Airflow-and-Apache-Superset
+   git clone https://github.com/tmquang2002/Automated-ETL-and-Visualization-of-Weather-Data-from-NCHMF-Using-Airflow-and-Superset.git
+   cd Automated-ETL-and-Visualization-of-Weather-Data-from-NCHMF-Using-Airflow-and-Superset.git
 
 2. **Configuration**
 
@@ -71,4 +71,38 @@ docker compose -f docker-compose-non-dev.yml up #to run Apache Superset
 - **Email**: Sends an email notification to users with updated weather information specific to their local area.
 - **Analysis**: Analyzes the weather data, providing detailed insights into daily temperature, humidity, wind direction, and other weather indicators.
 
+## Usage
+### Raw Data
+
+
+### Access Airflow and Run ETL task
+
+- Open [http://localhost:8081](http://localhost:8081) in your browser.
+- Default credentials: `airflow` / `airflow`.
+- Run ETL
+  
+![image](https://i.ibb.co/YQ3t1p5/airflow.png)
+
+- After ETL is done, receive email about the latest weather information in your subscribed area.
+  
+  ![image]()
+
+### Access Superset
+
+- Open [http://localhost:8088](http://localhost:8088) in your browser.
+- Default credentials: `admin` / `admin`.
+
+### Explore Data
+
+- In Superset, connect to the PostgreSQL database and use the available datasets to create charts and dashboards.
+
+![image](https://i.ibb.co/C97XzRx/superset.png)
+
+## Conclusion
+- This project successfully automated the process of extracting, transforming, and loading (ETL) weather data from the NCHMF website, storing it in a MongoDB, tranform and load to PostgreSQL database, visualizing the data using Apache Superset. By leveraging Apache Airflow, the ETL pipeline ensures a scalable and reliable system that consistently updates weather information. The use of Docker Compose has streamlined the deployment of services such as Airflow, PostgreSQL, MongoDB, and Apache Superset, making the setup portable and easy to manage. Additionally, users receive timely email notifications with localized weather data, enhancing the project's practicality.
+## Future Direction
+- Future improvements include integrating more data sources, applying machine learning for weather predictions, enabling real-time data updates, and adding personalized notifications.
+## Contact
+
+For any questions or feedback, please reach out to [tmquang120202@gmail.com](mailto:tmquang120202@gmail.com).
    

@@ -73,7 +73,11 @@ docker compose -f docker-compose-non-dev.yml up #to run Apache Superset
 
 ## Usage
 ### Raw Data
+- Latest weather information.
+![image](https://i.ibb.co/wKPfrKn/wdinfo.png)
 
+- Temperature information for the past 10 days.
+![image](https://i.ibb.co/BB7DM6j/wdseries.png)
 
 ### Access Airflow and Run ETL task
 
@@ -82,6 +86,7 @@ docker compose -f docker-compose-non-dev.yml up #to run Apache Superset
 - Run ETL
   
 ![image](https://i.ibb.co/YQ3t1p5/airflow.png)
+![image](https://i.ibb.co/LCPkBC6/dag.png)
 
 - After ETL is done, receive email about the latest weather information in your subscribed area.
   

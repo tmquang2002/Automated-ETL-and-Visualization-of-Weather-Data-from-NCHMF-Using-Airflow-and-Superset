@@ -38,6 +38,7 @@ This project aims to automate the process of extracting, transforming, and loadi
    ```bash
    git clone https://github.com/tmquang2002/Automated-ETL-and-Visualization-of-Weather-Data-from-NCHMF-Using-Airflow-and-Superset.git
    cd Automated-ETL-and-Visualization-of-Weather-Data-from-NCHMF-Using-Airflow-and-Superset.git
+    ```bash
     - Install superset.
     ```bash
    git clone https://github.com/apache/superset.git

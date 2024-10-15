@@ -104,7 +104,14 @@ docker compose -f docker-compose-non-dev.yml up #to run Apache Superset
 ![image](https://i.ibb.co/C97XzRx/superset.png)
 
 ## Visualizations
-
+- Insert additional information about iso_codes to support map visualization.
+  ![image](https://i.ibb.co/R6JL0pC/bd0.png)
+  
+- Temperature and humidity chart of the provinces.
+  ![image](https://i.ibb.co/8Kk4bF9/bd1.png)
+  
+- Temperature chart for the past 10 days of some provinces.
+  ![image](https://i.ibb.co/kxC2whN/bd2.png)
 
 ## Conclusion
 - This project successfully automated the process of extracting, transforming, and loading (ETL) weather data from the NCHMF website, storing it in a MongoDB, tranform and load to PostgreSQL database, visualizing the data using Apache Superset. By leveraging Apache Airflow, the ETL pipeline ensures a scalable and reliable system that consistently updates weather information. The use of Docker Compose has streamlined the deployment of services such as Airflow, PostgreSQL, MongoDB, and Apache Superset, making the setup portable and easy to manage. Additionally, users receive timely email notifications with localized weather data, enhancing the project's practicality.

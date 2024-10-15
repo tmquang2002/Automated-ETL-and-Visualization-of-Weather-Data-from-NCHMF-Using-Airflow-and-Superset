@@ -104,6 +104,7 @@ docker compose -f docker-compose-non-dev.yml up #to run Apache Superset
 ![image](https://i.ibb.co/C97XzRx/superset.png)
 
 ## Visualizations
+
 - Insert additional information about iso_codes to support map visualization.
   ![image](https://i.ibb.co/R6JL0pC/bd0.png)
   

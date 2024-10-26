@@ -1,6 +1,6 @@
 # Automated ETL and Visualization of Weather Data from NCHMF Using Airflow and Superset
 
-<img src="https://nchmf.gov.vn/KttvsiteE//images/banner-hd-en.jpg" alt="NCHMF" width="900"/>
+<img src="https://i.ibb.co/JR0Nwq3/banner-hd-en.jpg" alt="NCHMF" width="900"/>
 
 ## Table of Contents
 
